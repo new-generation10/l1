@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        body {
+            background-image: url('1669935675_44-kartinkin-net-p-fon-dlya-saita-svetlii-vkontakte-46.jpg');
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        form {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }        
+        
+        input[type="text"], textarea {           
+            padding: 10px;
+            border-radius: 10px;           
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="color: blue;">Анкета</h1>
+    <form>
+        <label for="name">Пожалуйста введите ваше имя:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email">
+
+        Кто вы:
+        <input type="radio" name="group" value="scholboy" id="scholboy">Учащийся
+        <input type="radio" name="group" value="student" id="student">Студент
+        <input type="radio" name="group" value="teacher" id="teacher">Учитель
+
+        <label>Какие сервисы вы используете:</label><br>
+<input type="checkbox" id="www" name="service\" align="center"> www <br>
+<input type="checkbox" id="email" name="service\"align="center">Email <br>
+<input type="checkbox" id="ftp" name="service\"align="center"> FTP <br>
+        <label for="browsers">Выберите браузер:</label>
+        <select name="browsers" id="browsers"> 
+            <option selected>Internet Explorer</option>
+            <option>Netscape Navigator</option>
+            <option>Opera</option>
+            <option>Neo Planet</option>
+        </select>
+
+        <label for="message">Какую еще информацию вы хотели бы видеть на нашем сайте?</label>
+        <textarea name="message" id="message" rows="4" cols="30"></textarea>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
